@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Join FutureVerse | Team Registration</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="registration-page">
+
+    <!-- =====================================================
+         BACKGROUND
+         Same FutureVerse Background Image
+         ===================================================== -->
+
+    <div class="registration-background"></div>
+
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <header class="registration-header">
+
+        <a href="index.html" class="registration-logo">
+
+            <div class="registration-logo-symbol">
+                FV
+            </div>
+
+            <div class="registration-logo-name">
+                FutureVerse
+            </div>
+
+        </a>
+
+
+        <a href="index.html" class="back-home">
+            ← Back to Home
+        </a>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MAIN
+         ===================================================== -->
+
+    <main class="registration-main">
+
+
+        <!-- =================================================
+             INTRODUCTION
+             ================================================= -->
+
+        <section class="registration-intro">
+
+            <span class="registration-label">
+                FUTUREVERSE TEAM
+            </span>
+
+            <h1>
+                Become a FutureMaker.
+            </h1>
+
+            <p>
+                FutureVerse is building a community of curious,
+                creative and ambitious people who want to learn,
+                create and work on ideas that can shape the future.
+            </p>
+
+            <div class="intro-note">
+                Your journey with FutureVerse starts here.
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             REGISTRATION FORM
+             ================================================= -->
+
+        <section class="registration-layout">
+
+            <div class="registration-card">
+
+
+                <!-- FORM HEADER -->
+
+                <div class="form-header">
+
+                    <div class="form-kicker">
+                        TEAM REGISTRATION
+                    </div>
+
+                    <h2>
+                        Tell us about yourself
+                    </h2>
+
+                    <p>
+                        Fill in the details below to register
+                        your interest in joining FutureVerse.
+                    </p>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     FORM
+                     ================================================= -->
+
+                <form
+                    id="teamRegistrationForm"
+                    action="#"
+                    method="POST"
+                >
+
+
+                    <!-- =============================================
+                         SECTION 01 — PERSONAL INFORMATION
+                         ============================================= -->
+
+                    <div class="form-section">
+
+                        <div class="form-section-title">
+
+                            <span class="section-number">
+                                01
+                            </span>
+
+                            Personal Information
+
+                        </div>
+
+
+                        <div class="form-grid">
+
+
+                            <!-- Full Name -->
+
+                            <div class="form-field">
+
+                                <label for="fullName">
+                                    Full Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="fullName"
+                                    name="fullName"
+                                    placeholder="Enter your full name"
+                                    required
+                                >
+
+                            </div>
+
+
+
+                            <!-- Age -->
+
+                            <div class="form-field">
+
+                                <label for="age">
+                                    Age
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="age"
+                                    name="age"
+                                    placeholder="Enter your age"
+                                    min="13"
+                                    max="100"
+                                    required
+                                >
+
+                            </div>
+
+
+
+                            <!-- Gender -->
+
+                            <div class="form-field">
+
+                                <label for="gender">
+                                    Gender
+                                    <span>(Optional)</span>
+                                </label>
+
+                                <select
+                                    id="gender"
+                                    name="gender"
+                                >
+
+                                    <option value="">
+                                        Select gender
+                                    </option>
+
+                                    <option value="male">
+                                        Male
+                                    </option>
+
+                                    <option value="female">
+                                        Female
+                                    </option>
+
+                                    <option value="other">
+                                        Other
+                                    </option>
+
+                                    <option value="prefer-not-to-say">
+                                        Prefer not to say
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+
+                            <!-- City -->
+
+                            <div class="form-field">
+
+                                <label for="city">
+                                    City
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="city"
+                                    name="city"
+                                    placeholder="Enter your city"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =============================================
+                         SECTION 02 — EMAIL VERIFICATION
+                         ============================================= -->
+
+                    <div class="form-section">
+
+                        <div class="form-section-title">
+
+                            <span class="section-number">
+                                02
+                            </span>
+
+                            Email Verification
+
+                        </div>
+
+
+                        <!-- Email -->
+
+                        <div class="form-field full-width">
+
+                            <label for="email">
+                                Email Address
+                            </label>
+
+                            <div class="email-otp-row">
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Enter your email address"
+                                    required
+                                >
+
+                                <button
+                                    type="button"
+                                    id="sendOtpButton"
+                                    class="otp-button"
+                                >
+                                    Send OTP
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- OTP -->
+
+                        <div
+                            class="form-field full-width otp-field"
+                            id="otpSection"
+                        >
+
+                            <label for="otp">
+                                Enter OTP
+                            </label>
+
+                            <div class="email-otp-row">
+
+                                <input
+                                    type="text"
+                                    id="otp"
+                                    name="otp"
+                                    placeholder="Enter 6-digit OTP"
+                                    maxlength="6"
+                                    inputmode="numeric"
+                                    autocomplete="one-time-code"
+                                >
+
+                                <button
+                                    type="button"
+                                    id="verifyOtpButton"
+                                    class="otp-button"
+                                >
+                                    Verify Email
+                                </button>
+
+                            </div>
+
+
+                            <div
+                                id="otpMessage"
+                                class="otp-message"
+                            ></div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =============================================
+                         SECTION 03 — SKILLS & INTERESTS
+                         ============================================= -->
+
+                    <div class="form-section">
+
+                        <div class="form-section-title">
+
+                            <span class="section-number">
+                                03
+                            </span>
+
+                            Skills & Interests
+
+                        </div>
+
+
+                        <div class="interest-grid">
+
+
+                            <label class="interest-option">
+
+                                <input
+                                    type="checkbox"
+                                    name="skills[]"
+                                    value="Artificial Intelligence"
+                                >
+
+                                <span>
+                                    Artificial Intelligence
+                                </span>
+
+                            </label>
+
+
+
+                            <label class="interest-option">
+
+                                <input
+                                    type="checkbox"
+                                    name="skills[]"
+                                    value="Programming"
+                                >
+
+                                <span>
+                                    Programming / Coding
+                                </span>
+
+                            </label>
+
+
+
+                            <label class="interest-option">
+
+                                <input
+                                    type="checkbox"
+                                    name="skills[]"
+                                    value="Web Development"
+                                >
+
+                                <span>
+                                    Web Development
+                                </span>
+
+                            </label>
+
+
+
+                            <label class="interest-option">
+
+                                <input
+                                    type="checkbox"
+                                    name="skills[]"
+                                    value="App Development"
+                                >
+
+                                <span>
+                                    App Development
+                                </span>
+
+                            </label>
+
+
+
+                            <label class="interest-option">
+
+                                <input
+                                    type="checkbox"
+                                    name="skills[]"
+                                    value="UI UX Design"
+                                >
+
+                                <span>
+                                    UI / UX Design
+                                </span>
+
+                            </label>
+
+
+
+                            <label class="interest-option">
+
+                                <input
+                                    type="checkbox"
+                                    name="skills[]"
+                                    value="Research Innovation"
+                                >
+
+                                <span>
+                                    Research & Innovation
+                                </span>
+
+                            </label>
+
+
+
+                            <label class="interest-option">
+
+                                <input
+                                    type="checkbox"
+                                    name="skills[]"
+                                    value="Content Media"
+                                >
+
+                                <span>
+                                    Content & Media
+                                </span>
+
+                            </label>
+
+
+
+                            <label class="interest-option">
+
+                                <input
+                                    type="checkbox"
+                                    name="skills[]"
+                                    value="Management Team Support"
+                                >
+
+                                <span>
+                                    Management / Team Support
+                                </span>
+
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =============================================
+                         SECTION 04 — ABOUT YOU
+                         ============================================= -->
+
+                    <div class="form-section">
+
+                        <div class="form-section-title">
+
+                            <span class="section-number">
+                                04
+                            </span>
+
+                            About You
+
+                        </div>
+
+
+                        <div class="form-grid">
+
+
+                            <!-- Why Join -->
+
+                            <div class="form-field full-width">
+
+                                <label for="reason">
+                                    Why do you want to join FutureVerse?
+                                </label>
+
+                                <textarea
+                                    id="reason"
+                                    name="reason"
+                                    maxlength="500"
+                                    placeholder="Tell us briefly about your interest, goals or what you would like to build..."
+                                    required
+                                ></textarea>
+
+                            </div>
+
+
+
+                            <!-- Time -->
+
+                            <div class="form-field full-width">
+
+                                <label for="time">
+                                    How much time can you contribute?
+                                </label>
+
+                                <select
+                                    id="time"
+                                    name="time"
+                                    required
+                                >
+
+                                    <option value="">
+                                        Select your availability
+                                    </option>
+
+                                    <option value="1-2">
+                                        1–2 hours / day
+                                    </option>
+
+                                    <option value="2-4">
+                                        2–4 hours / day
+                                    </option>
+
+                                    <option value="4+">
+                                        4+ hours / day
+                                    </option>
+
+                                    <option value="weekends">
+                                        Weekends only
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =============================================
+                         CONFIRMATION
+                         ============================================= -->
+
+                    <div class="form-confirmation">
+
+                        <label class="checkbox-row">
+
+                            <input
+                                type="checkbox"
+                                id="confirmation"
+                                name="confirmation"
+                                required
+                            >
+
+                            <span class="custom-checkbox"></span>
+
+                            <span>
+                                I confirm that the information provided
+                                by me is correct and I am interested in
+                                becoming part of FutureVerse.
+                            </span>
+
+                        </label>
+
+
+                        <!-- SUBMIT -->
+
+                        <button
+                            type="submit"
+                            class="submit-button"
+                            id="submitRegistration"
+                        >
+                            Submit Registration
+                        </button>
+
+
+                        <p class="privacy-note">
+                            Your information will only be used for
+                            FutureVerse team registration and communication.
+                        </p>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="registration-footer">
+
+        © 2026 FutureVerse. All rights reserved.
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+   <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+<script>
+    emailjs.init({
+        publicKey: "WyOlQY-qYDAd10BIT"
+    });
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

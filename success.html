@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Welcome to FutureVerse</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="success-page">
+
+
+    <!-- =====================================================
+         BACKGROUND
+         ===================================================== -->
+
+    <div class="success-background"></div>
+
+
+    <!-- =====================================================
+         CELEBRATION LAYER
+         ===================================================== -->
+
+    <div
+        class="celebration-layer"
+        id="celebrationLayer"
+    >
+
+        <!-- Central burst -->
+
+        <div class="celebration-burst"></div>
+
+
+        <!-- Balloons -->
+
+        <div class="balloon balloon-1"></div>
+        <div class="balloon balloon-2"></div>
+        <div class="balloon balloon-3"></div>
+        <div class="balloon balloon-4"></div>
+        <div class="balloon balloon-5"></div>
+        <div class="balloon balloon-6"></div>
+
+
+        <!-- Confetti -->
+
+        <div class="confetti-container" id="confettiContainer"></div>
+
+
+        <!-- Celebration Message -->
+
+        <div class="celebration-message">
+
+            <div class="celebration-check">
+                ✓
+            </div>
+
+            <div class="celebration-small">
+                REGISTRATION COMPLETE
+            </div>
+
+            <h2>
+                Welcome to FutureVerse
+            </h2>
+
+            <p>
+                Your journey starts now.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         MAIN SUCCESS CONTENT
+         ===================================================== -->
+
+    <main class="success-main">
+
+
+        <div class="success-card">
+
+
+            <!-- Top badge -->
+
+            <div class="success-badge">
+
+                <span class="success-badge-icon">
+                    ✓
+                </span>
+
+                Registration Successful
+
+            </div>
+
+
+
+            <!-- Main Icon -->
+
+            <div class="success-icon">
+
+                <div class="success-icon-glow"></div>
+
+                <span>✓</span>
+
+            </div>
+
+
+
+            <!-- Heading -->
+
+            <div class="success-content">
+
+                <div class="success-kicker">
+                    FUTUREVERSE TEAM
+                </div>
+
+                <h1>
+                    You're officially
+                    <span>in.</span>
+                </h1>
+
+                <p class="success-description">
+                    Your registration has been successfully received.
+                    Welcome to a community of people who are ready
+                    to learn, build, innovate and shape what comes next.
+                </p>
+
+            </div>
+
+
+
+            <!-- Divider -->
+
+            <div class="success-divider"></div>
+
+
+
+            <!-- Future Statement -->
+
+            <div class="future-statement">
+
+                <span class="future-line"></span>
+
+                <p>
+                    The future is built by those who choose
+                    to create it.
+                </p>
+
+                <span class="future-line"></span>
+
+            </div>
+
+
+
+            <!-- Next -->
+
+            <div class="success-next">
+
+                <div class="next-item">
+
+                    <div class="next-icon">
+                        01
+                    </div>
+
+                    <div>
+                        <strong>
+                            Registration Received
+                        </strong>
+
+                        <span>
+                            Your details are now with FutureVerse.
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="next-item">
+
+                    <div class="next-icon">
+                        02
+                    </div>
+
+                    <div>
+                        <strong>
+                            Team Review
+                        </strong>
+
+                        <span>
+                            Our team will review your registration.
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="next-item">
+
+                    <div class="next-icon">
+                        03
+                    </div>
+
+                    <div>
+                        <strong>
+                            Your Future Begins
+                        </strong>
+
+                        <span>
+                            Stay ready for what's next.
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+         
+
+
+        </div>
+
+
+        <!-- Footer -->
+
+        <p class="success-footer">
+            FutureVerse · Building tomorrow, together.
+        </p>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+         ===================================================== -->
+
+    <script>
+
+        /* =================================================
+           CONFETTI GENERATOR
+           ================================================= */
+
+        const confettiContainer =
+            document.getElementById("confettiContainer");
+
+
+        const confettiShapes = [
+            "square",
+            "circle",
+            "strip"
+        ];
+
+
+        function createConfetti() {
+
+            for (let i = 0; i < 95; i++) {
+
+                const piece =
+                    document.createElement("span");
+
+                const shape =
+                    confettiShapes[
+                        Math.floor(
+                            Math.random() *
+                            confettiShapes.length
+                        )
+                    ];
+
+
+                piece.classList.add(
+                    "confetti-piece",
+                    shape
+                );
+
+
+                piece.style.left =
+                    Math.random() * 100 + "%";
+
+
+                piece.style.animationDelay =
+                    Math.random() * 2.5 + "s";
+
+
+                piece.style.animationDuration =
+                    3.5 +
+                    Math.random() * 2.5 +
+                    "s";
+
+
+                piece.style.setProperty(
+                    "--rotate",
+                    Math.random() * 720 - 360 + "deg"
+                );
+
+
+                piece.style.setProperty(
+                    "--drift",
+                    Math.random() * 180 - 90 + "px"
+                );
+
+
+                confettiContainer.appendChild(piece);
+            }
+        }
+
+
+        createConfetti();
+
+
+
+        /* =================================================
+           END CELEBRATION AFTER 6 SECONDS
+           ================================================= */
+
+        setTimeout(() => {
+
+            const celebration =
+                document.getElementById(
+                    "celebrationLayer"
+                );
+
+
+            celebration.classList.add(
+                "celebration-finished"
+            );
+
+
+        }, 6200);
+
+
+    </script>
+
+
+</body>
+</html>
