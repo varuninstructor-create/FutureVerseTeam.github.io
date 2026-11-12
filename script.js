@@ -623,9 +623,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     await emailjs.send(
 
-                        "service_xjqunrn",
+                        "service_6valthf",
 
-                        "template_v7f129a",
+                        "template_cm5guyq",
 
                         {
                             email:
