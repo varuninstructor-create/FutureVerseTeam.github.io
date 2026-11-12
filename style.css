@@ -4320,3 +4320,7 @@ button {
         height: 560px;
     }
 }
+/* Remove Android Chrome tap highlight */
+html {
+    -webkit-tap-highlight-color: transparent;
+}
